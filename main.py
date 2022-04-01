@@ -1,3 +1,5 @@
+
+
 def binarySum(a, b):
         while (b != 0):
             carry = a & b
@@ -32,7 +34,11 @@ def simula_recebimento(pacote):
         
 mensagem = 'mensagem de teste'
 checksum_mensagem = ~calculate_checkSum(mensagem) & 255
+#mensagem = 'mensagem de t3ste' #descomentar para testar mensagem corrompida
 print(str(checksum_mensagem))  
 pacote = [mensagem,checksum_mensagem]
 
 simula_recebimento(pacote)
+
+
+
